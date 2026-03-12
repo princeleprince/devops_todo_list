@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run tests with coverage
-        run: npm test -- --coverage
+        run: npm test -- --coverage --coverageReporters=json-summary
 
       - name: Check coverage threshold (≥80%)
         run: |
